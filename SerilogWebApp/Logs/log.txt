@@ -1,0 +1,29 @@
+09/01/2021 21:42:13 -03:00 Api inicializando..
+09/01/2021 21:42:32 -03:00 WeatherForecast instanciando ILogger
+09/01/2021 21:42:32 -03:00 endpoint GET -> WeatherForecast.Get()
+09/01/2021 21:42:32 -03:00 Numero de iterações 0
+09/01/2021 21:42:32 -03:00 Numero de iterações 1
+09/01/2021 21:42:32 -03:00 Numero de iterações 2
+09/01/2021 21:42:32 -03:00 endpoint GET -> Exception
+System.Exception: Ocorreu uma exeption
+   at SerilogWebApp.Controllers.WeatherForecastController.Get() in C:\Users\Micaely\OneDrive\Documentos\Workspace\Estudo\dotnet\SerilogWebApp\SerilogWebApp\Controllers\WeatherForecastController.cs:line 40
+09/01/2021 21:42:41 -03:00 An unhandled exception has occurred while executing the request.
+System.Exception: Ocorreu uma exeption
+   at SerilogWebApp.Controllers.WeatherForecastController.Get() in C:\Users\Micaely\OneDrive\Documentos\Workspace\Estudo\dotnet\SerilogWebApp\SerilogWebApp\Controllers\WeatherForecastController.cs:line 40
+   at lambda_method2(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
